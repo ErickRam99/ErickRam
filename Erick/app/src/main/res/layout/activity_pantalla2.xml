@@ -8,7 +8,89 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-39dp"
+        tools:layout_editor_absoluteY="0dp">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="248dp"
+            android:layout_height="37dp"
+            android:text="Calculo de indice de masa corporal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="320dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="36dp"
+            android:text="inagrese su peso"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/edtPeso"
+            android:layout_width="345dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Peso"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="341dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:text="ingrse seu esattura en m"
+            app:layout_constraintEnd_toEndOf="@+id/edtPeso"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/edtPeso"
+            app:layout_constraintTop_toBottomOf="@+id/edtPeso" />
+
+        <EditText
+            android:id="@+id/edtAltura"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Altura"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:onClick="calcular"
+            android:text="Calcular "
+            app:layout_constraintEnd_toEndOf="@+id/edtAltura"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="@+id/edtAltura"
+            app:layout_constraintTop_toBottomOf="@+id/edtAltura" />
+
+        <TextView
+            android:id="@+id/txvmensaje"
+            android:layout_width="346dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="116dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtAltura"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtAltura"
+            app:layout_constraintTop_toBottomOf="@+id/edtAltura" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

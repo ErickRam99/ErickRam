@@ -2,6 +2,7 @@ package edu.sv.erick;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,18 +27,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    public void ingresar(View view){
-        String user,contra,respuesta;
+    public void ingresar (View view){
+        String user, contra;
+        user  = edtUser.getText().toString();
+        contra=edtContra.getText().toString();
 
-        user=edtUser.getText().toString();
-        contra= edtContra.getText().toString();
-
-        if(user.equals("parcialETps1") && (contra.equals("p4rC14l#tp$"))) {
-            txvRes.setText("usuario y contrasena correcto");
-
+        if(user.equals("parcialETps1")&&(contra.equals("p4rC14l#tp$"))){
+            Intent intento= new Intent(this,Pantalla2.class);
+            startActivity(intento);
         }
         else
-            txvRes.setText("usuario y contrasena incorrecto");
+            txvRes.setText("usuario o contrasena incorrectas");
+
 
 
     }
