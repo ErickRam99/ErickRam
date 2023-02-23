@@ -19,10 +19,10 @@
             android:text="Username "
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintHorizontal_bias="0.433"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.284" />
+            app:layout_constraintVertical_bias="0.206" />
 
         <EditText
             android:id="@+id/edtuser"
@@ -38,7 +38,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/edtContra"
+            android:id="@+id/edtContrase"
             android:layout_width="327dp"
             android:layout_height="51dp"
             android:layout_marginTop="8dp"
@@ -54,11 +54,11 @@
             android:id="@+id/txvMensj"
             android:layout_width="104dp"
             android:layout_height="28dp"
-            android:layout_marginBottom="116dp"
+            android:layout_marginBottom="56dp"
             android:text="Login"
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintHorizontal_bias="0.312"
             app:layout_constraintStart_toStartOf="@+id/textView" />
 
         <TextView
@@ -76,11 +76,22 @@
             android:id="@+id/btnLogin"
             android:layout_width="270dp"
             android:layout_height="59dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="76dp"
+            android:onClick="ingresar"
             android:text="LOGIN."
-            app:layout_constraintEnd_toEndOf="@+id/edtContra"
-            app:layout_constraintHorizontal_bias="0.333"
-            app:layout_constraintStart_toStartOf="@+id/edtContra"
-            app:layout_constraintTop_toBottomOf="@+id/edtContra" />
+            app:layout_constraintEnd_toEndOf="@+id/edtContrase"
+            app:layout_constraintHorizontal_bias="0.596"
+            app:layout_constraintStart_toStartOf="@+id/edtContrase"
+            app:layout_constraintTop_toBottomOf="@+id/edtContrase" />
+
+        <TextView
+            android:id="@+id/txvMensa"
+            android:layout_width="167dp"
+            android:layout_height="31dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+            app:layout_constraintHorizontal_bias="0.349"
+            app:layout_constraintStart_toStartOf="@+id/btnLogin" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
