@@ -32,21 +32,21 @@ public class Pantalla2 extends AppCompatActivity {
         res=(peso/(altura*altura));
 
         if(res<10.5){
-            txvres.setText("Críticamente Bajo de Peso" + res);
+            txvres.setText("Críticamente Bajo de Peso" +"su IMC es de "+ res);
         }else if(res<15.9) {
-            txvres.setText("Severamente Bajo de Peso"  + res);
+            txvres.setText("Severamente Bajo de Peso"  +"su IMC es de "+ res);
         }else if(res<18.5) {
-            txvres.setText("Bajo de Peso" + res);
+            txvres.setText("Bajo de Peso" + "su IMC es de "+ res);
         }else if(res<25) {
-            txvres.setText("Normal (peso saludable)"  + res);
+            txvres.setText("Normal (peso saludable)"  +"su IMC es de "+"su IMC es de "+ res);
         }else if(res<30) {
-            txvres.setText( "Sobrepeso" + res);
+            txvres.setText( "Sobrepeso" +"su IMC es de "+"su IMC es de "+res);
         }else if(res<35) {
-            txvres.setText("Obesidad Clase 1 - Moderadamente Obeso"  + res);
+            txvres.setText("Obesidad Clase 1 - Moderadamente Obeso"  +"su IMC es de "+ res);
         }else if(res<40) {
-            txvres.setText("Obesidad Clase 2 - Severamente Obeso" + res);
+            txvres.setText("Obesidad Clase 2 - Severamente Obeso" +"su IMC es de "+ res);
         }else
-            txvres.setText("Obesidad Clase 3 - Críticamente Obeso" + res);
+            txvres.setText("Obesidad Clase 3 - Críticamente Obeso" +"su IMC es de "+ res);
 
     }
 }
